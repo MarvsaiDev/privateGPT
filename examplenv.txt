@@ -1,0 +1,12 @@
+PERSIST_DIRECTORY=db
+MODEL_TYPE=AZUREOPENAI
+MODEL_PATH=models/ggml-gpt4all-j-v1.3-groovy.bin
+EMBEDDINGS_MODEL_NAME=all-MiniLM-L6-v2
+MODEL_N_CTX=1000
+MODEL_N_BATCH=8
+TARGET_SOURCE_CHUNKS=2
+API_TYPE = "azure"
+API_BASE = "https://healthsummary.openai.azure.com/"
+OPENAI_API_VERSION = "2023-03-15-preview"
+OPENAI_API_KEY = "728335a4d8cd4e6993556b280e4d8db8"
+OPENAI_API_BASE =  "https://healthsummary.openai.azure.com/"
