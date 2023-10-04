@@ -37,7 +37,7 @@ from chromadb.api.segment import API
 persist_directory = os.environ.get('PERSIST_DIRECTORY')
 source_directory = os.environ.get('SOURCE_DIRECTORY', 'source_documents')
 embeddings_model_name = os.environ.get('EMBEDDINGS_MODEL_NAME')
-chunk_size = 500
+chunk_size = 4000
 chunk_overlap = 50
 
 
@@ -149,6 +149,7 @@ def does_vectorstore_exist(persist_directory: str, embeddings: HuggingFaceEmbedd
     if not db.get()['documents']:
         return False
     return True
+
 
 def main():
     # Create embeddings
