@@ -1,4 +1,5 @@
 import sys
+from PyQt6.QtGui import QFont
 from PyQt6.QtCore import Qt, QRunnable, QThreadPool
 from PyQt6.QtWidgets import (
     QApplication,
@@ -32,7 +33,7 @@ class MainWindow(QWidget):
         self.init_ui()
 
     def init_ui(self):
-        self.setWindowTitle('PrivateGPT')
+        self.setWindowTitle('PrivateClaritas')
 
         main_layout = QVBoxLayout()
         main_layout.setContentsMargins(20, 20, 20, 20)
@@ -42,6 +43,8 @@ class MainWindow(QWidget):
         self.query_input = QLineEdit()
         self.query_input.setPlaceholderText("Enter a query")
         self.query_input.setEnabled(True)
+        
+        self.query_input.setFont(QFont("Arial", 14))  # Set font size to 14
         self.query_input.setMinimumHeight(30)
         button_layout.addWidget(self.query_input)
 
@@ -65,6 +68,7 @@ class MainWindow(QWidget):
         self.answer_output.setReadOnly(True)
         self.answer_output.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
         self.answer_output.setMinimumHeight(300)
+        self.answer_output.setFont(QFont("Arial", 18))  # Set font size to 14
         main_layout.addWidget(self.answer_output)
 
         self.setLayout(main_layout)
