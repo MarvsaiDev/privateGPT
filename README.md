@@ -1,5 +1,8 @@
 # privateGPT -- Modified by MarvSAI to test out integration with private OPENAI api from azure.
 It works fine. No implied gaurantees are given and this code is not used in our production service. https://ai-scan.xyz
+
+To try this code just add the azure variables you can find in privateGPT.py to your .env file.
+
 Ask questions to your documents without an internet connection, using the power of LLMs. 100% private, no data leaves your execution environment at any point. You can ingest documents and ask questions without an internet connection!
 
 > :ear: **Need help applying PrivateGPT to your specific use case?** [Let us know more about it](https://forms.gle/4cSDmH13RZBHV9at7) and we'll try to help! We are refining PrivateGPT through your feedback.
